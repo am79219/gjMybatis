@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+    <script src="\jquery-3.7.1.min.js"></script>
+</head>
+<body>
+ <button id="a1">顯示</button>
+
+    <div id="show"></div>
+    
+    <script>
+        $("#a1").click(function(){
+            $.ajax({
+                type:"GET",
+                url:"/queryMemberAll",
+                success:function(data){
+                    //alert(data.length);
+
+                    var x="";
+                    for(var i=0; i<data.length; i++){
+                        x=x+data[i].name+"<br>"
+                        +data[i].username+"<br>"
+                        +data[i].password+"<br><br><br>"
+                    }
+
+                    $("#show").html(x);
+                }
+            })
+        });
+
+    </script>
+
+</body>
+</html>
