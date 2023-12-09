@@ -29,6 +29,7 @@ public class memberController {
 		member m = msi.Login(username, password);
 		ModelAndView mav= null;
 		if(m!=null) {
+			session.setAttribute("M", m);
 			mav= new ModelAndView("/loginSuccess");
 		}else {
 			mav= new ModelAndView("/loginError");

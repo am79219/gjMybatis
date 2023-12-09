@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+.header_banner {
+	height: 80px;
+	border-style: dotted;
+	background-color: lightblue;
+}
+
+.header {
+	height: 150px;
+	border-style: dotted;
+	background-color: red;
+	
+}
+
+.header .btns_box {
+	left: 162px;
+	bottom: 24px;
+	border-style: dotted;
+	background-color: yellow;
+}
+
+.header .sub_header {
+	right: 14px;
+	top: 20px;
+	width: 1000px;
+	border-style: dotted;
+}
+

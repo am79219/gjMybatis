@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<link rel="stylesheet" href="/css/st1.css">
+</head>
+<body>
+	<div id="header"></div>
+	<div id="navigater"></div>
+	<div id="content">
+		<div id="pic">
+			<form action="/porder/add" method="POST">
+				<table width="450" align="center" border="1">
+					<tr height="30">
+						<td colspan="3" align="center">
+						<h3><label th:text="${session.M.name}"/>，請選擇您要的商品及數量</h3>
+					<tr align="center">
+						<td>A
+						<td>B
+						<td>C
+					<tr>
+						<td><img src="/pic/fruit1.jpg">
+						<td><img src="/pic/fruit2.jpg">
+						<td><img src="/pic/fruit3.jpg">
+					<tr align="center">
+						<td>
+							<select name="a">
+								  <option value="0">0</option>
+								  <option value="1">1</option>
+								  <option value="2">2</option>
+								  <option value="3">3</option>
+								  <option value="4">4</option>
+								  <option value="5">5</option>
+							</select>
+						<td>
+							<select name="b">
+								  <option value="0">0</option>
+								  <option value="1">1</option>
+								  <option value="2">2</option>
+								  <option value="3">3</option>
+								  <option value="4">4</option>
+								  <option value="5">5</option>
+							</select>
+						<td>
+							<select name="c">
+							      <option value="0">0</option>
+								  <option value="1">1</option>
+								  <option value="2">2</option>
+								  <option value="3">3</option>
+								  <option value="4">4</option>
+								  <option value="5">5</option>
+							</select>
+					<tr align="center">
+						<td colspan="3" align="center"><input type="submit" value="OK">
+				</table>
+			</form>
+		</div>
+	</div>
+	<div id="footer"></div>
+
+</body>
+</html>
